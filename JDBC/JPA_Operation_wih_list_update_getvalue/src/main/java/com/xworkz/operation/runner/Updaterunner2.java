@@ -12,7 +12,7 @@ import com.xworkz.operation.dto.OperationDto;
 public class Updaterunner2 {
 	public static void main(String[] args) {
 		
-		EntityManagerFactory emFactory = Persistence.createEntityManagerFactory("confuse");
+		EntityManagerFactory emFactory = Persistence.createEntityManagerFactory("xworkz");
 		EntityManager eManager = emFactory.createEntityManager();
 		EntityTransaction eTrans = eManager.getTransaction();
 		

@@ -13,12 +13,12 @@ import com.xworkz.operation.dto.OperationDto;
 
 public class Operationrunner {
 	public static void main(String[] args) {
-		EntityManagerFactory emFactory = Persistence.createEntityManagerFactory("confuse");
+		EntityManagerFactory emFactory = Persistence.createEntityManagerFactory("xworkz");
 		EntityManager em = emFactory.createEntityManager();
 		EntityTransaction eTrans = em.getTransaction();
 		List<OperationDto> list = new ArrayList<OperationDto>();
 		list.add(new OperationDto("Ausha", "anusha@gmail.com", 23, 9449706512L));
-		list.add(new OperationDto("Amala", "amala@gmail.com", 22, 9449706511L));
+		list.add(new OperationDto("Aravind", "aravind@gmail.com", 22, 9449706511L));
 		list.add(new OperationDto("Ashwath", "ashwath23@gmail.com", 21, 9449706510L));
 		list.add(new OperationDto("Banuprakash", "banu@gmail.com", 23, 9449706529L));
 		list.add(new OperationDto("Chran", "chran@gmail.com", 22, 9449706528L));
