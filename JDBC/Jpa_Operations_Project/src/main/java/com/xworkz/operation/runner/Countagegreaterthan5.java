@@ -20,7 +20,7 @@ public class Countagegreaterthan5 {
 		Query query = eManager.createNamedQuery("findByAgeGreaterThan");
 		query.setParameter("age", 15);
 
-		List<PersonEntity> persons = query.getResultList();
+		List<PersonEntity> persons = query.getResultList();`
 
 		if (persons != null && !persons.isEmpty()) {
 			System.out.println("Persons with age greater than " + 15 + ":");

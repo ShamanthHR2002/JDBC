@@ -13,7 +13,7 @@ import com.xworkz.operation.entity.PersonEntity;
 public class SaveData {
 	public static void main(String[] args) {
 
-		EntityManagerFactory emFactory = Persistence.createEntityManagerFactory("TestPersistence");
+		EntityManagerFactory emFactory = Persistence.createEntityManagerFactory("xworkz");
 		EntityManager eManager = emFactory.createEntityManager();
 		EntityTransaction eTrans = eManager.getTransaction();
 

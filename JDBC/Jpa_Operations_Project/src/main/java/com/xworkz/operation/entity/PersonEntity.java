@@ -22,6 +22,7 @@ import javax.persistence.Table;
 @NamedQuery(name = "updateByPhoneAndActive", query = "UPDATE PersonEntity p SET p.name = :newName WHERE p.phone = :phone AND p.active = :active")
 @NamedQuery(name = "updateActiveByPhone", query = "UPDATE PersonEntity p SET p.active = :active WHERE p.phone = :phone")
 @NamedQuery(name = "deleteByNameAndAge", query = "DELETE FROM PersonEntity p WHERE p.name = :name AND p.age = :age")
+@NamedQuery(name = "GetCountbyEmailandDate", query = "SELECT p FROM PersonEntity p WHERE p.email = :email AND p.createdAt = :createdAt")
 public class PersonEntity {
 
 	@Id
